@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-message">
+            مرحباً بك في منصتنا!<br>
+            لنبدأ، <span>الآن بإحداث فرق حقيقي!</span>
+        </div>
+        <form>
+            <label for="username">اسم المستخدم</label>
+            <input type="text" id="username" placeholder="اسم المستخدم" required>
+
+            <label for="password">كلمة السر</label>
+            <input type="password" id="password" placeholder="كلمة السر" required>
+
+            <div class="forgot-password">
+                <a href="#">هل نسيت كلمة المرور؟</a>
+            </div>
+            <button type="submit">تسجيل دخول</button>
+        </form>
+        <div class="social-login">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+        </div>
+        <div class="register">
+            ليس لديك حساب؟ <a href="#">سجل الآن</a>
+        </div>
+    </div>
+</body>
+</html>

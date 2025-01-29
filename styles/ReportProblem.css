@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+}
+reportHeader {
+    display: flex;
+    justify-content: space-between;
+	background: linear-gradient(to top right, #fa9e1b, #8d4fff);
+    padding: 10px 20px;
+    color: white;
+}
+reportHeader div {
+    padding: 0 10px;
+    cursor: pointer;
+}
+.report {
+    
+    background-color: #fff;
+    padding: 20px;
+    margin: 200px auto;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.report .form-group, .report .details, .report .checkbox-group  {
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+.report label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+
+}
+
+
+.report input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.report input[type="text"]:focus {
+	background-color: rgb(128, 118, 132);
+}
+.map-container {
+    margin: 20px 0;
+    height: 300px;
+    border: 1px solid #ccc;}
+
+.report button {
+	background: linear-gradient(to top right, #fa9e1b, #8d4fff);
+    color: #fff;
+    padding: 10px 15px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 750px;
+
+    transition: background-color 0.3s;
+}
+
+.report button:hover {
+	background: linear-gradient(to top right, #fa9e1b, #8d4fff);
+}

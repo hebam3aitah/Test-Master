@@ -1,0 +1,216 @@
+
+/* .container {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+} */
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    background-color: #40006b;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+       background-color: #007bff;
+       color: white;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.project {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project.ongoing {
+    border-left: 5px solid #ff9800;
+}
+
+.project.completed {
+    border-left: 5px solid #4caf50;
+}
+/* حاوية الكروت */
+.news-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* يسمح بتغليف الكروت إذا لم يكن هناك مساحة */
+    gap: 20px; /* مسافة بين الكروت */
+    justify-content: space-between; /* توزيع الكروت بالتساوي */
+    margin: 20px auto; /* محاذاة في المنتصف */
+    max-width: 1200px; /* عرض الحاوية بالكامل */
+    padding: 0 10px;
+}
+
+/* الكارد */
+.news-card {
+    width: calc(25% - 20px); /* عرض الكارد لجعل 4 في كل صف */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* الصورة */
+.news-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* محتوى الكارد */
+.news-content {
+    padding: 15px;
+}
+
+/* التاريخ */
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* العنوان */
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* الوصف */
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* حالة المشروع */
+.project-status {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.status-label {
+    color: #333;
+}
+.status {
+    color: #ff9800; /* لون مميز للحالة */
+}
+
+/* شريط التقدم */
+.progress-bar {
+    margin: 10px 0;
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color: #4caf50; /* لون التقدم */
+    border-radius: 5px;
+}
+
+/* الأزرار */
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px; /* مسافة بين الأزرار */
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* زر التبرع */
+.donate-button {
+    background-color: #ff5722;
+    color: #fff;
+}
+.donate-button:hover {
+    background-color: #e64a19;
+}
+
+/* زر التطوع */
+.volunteer-button {
+    background-color: #410e63;
+    color: #fff;
+}
+.volunteer-button:hover {
+    background-color: #1976d2;
+}
+/* زر عرض التفاصيل */
+.details-button {
+    background-color: #4caf50; /* لون أخضر */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.details-button:hover {
+    background-color: #388e3c; /* لون أغمق عند التمرير */
+}
+
+
+/* استجابة للجوال */
+@media (max-width: 1024px) {
+    .news-card {
+        width: calc(33.333% - 20px); /* 3 كروت لكل صف */
+    }
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        width: calc(50% - 20px); /* 2 كارد في كل صف */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-card {
+        width: 100%; /* كارد واحد لكل صف */
+    }
+}

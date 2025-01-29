@@ -1,0 +1,124 @@
+/* تنسيق العنصر الأساسي */
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #17a2b8;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #40006b;
+}
+.cardDetails {
+    display: flex;
+    flex-direction: row; /* الصورة على اليسار والنص على اليمين */
+    width: 100%; 
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(118, 35, 137, 0.1);
+    overflow: hidden;
+}
+
+/* تنسيق الصورة */
+.cardDetail_image_background {
+    margin-top: 10px;
+
+    height: 400px;
+    background-size: cover;
+
+}
+
+
+.offer_name a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق النص الرئيسي */
+.cardDetail_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* محاذاة النص من الأعلى */
+    justify-content: center;
+    padding: 20px;
+    font-size: 15px;
+    color: #151414;
+    line-height: 1.6;
+    width: 50%;
+    margin-right: 10px;
+
+}
+
+/* تنسيق العنوان */
+.ocardDetail_titel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px; 
+    margin-right: 10px;
+
+}
+
+/* تنسيق الحقول */
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 30px);
+   
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline-color: #007BFF;
+}
+
+/* تنسيق الأزرار */
+button {
+    display: inline-block;
+    margin: 10px 10px 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+
+.donate-button {
+    background-color: #28a745;
+}
+
+.volunteer-button {
+    background-color: #17a2b8;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* تنسيق النص داخل الفقرة */
+.cardDetail_text p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
